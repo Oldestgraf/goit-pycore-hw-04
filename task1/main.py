@@ -13,7 +13,8 @@ def total_salary(file_path):
     except FileNotFoundError:
         print('File is absent')
     else:
-        return total, average
+        salary_data = (total, average)
+        return salary_data
 
 total, average = total_salary("task1/data.txt")
 print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
