@@ -12,9 +12,8 @@ def total_salary(file_path):
         average = int(total/line_count) # Calculate average salary
     except FileNotFoundError:
         print('File is absent')
-    else:
-        salary_data = (total, average)
-        return salary_data
+    salary_data = (total, average)
+    return salary_data
 
 total, average = total_salary("task1/data.txt")
 print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
